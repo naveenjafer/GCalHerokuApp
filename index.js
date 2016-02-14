@@ -14,8 +14,7 @@ app.get('/page1', function(request, response) {
 });
 
 app.post('/page2',function(request, response) {
-  console.log(request.body);
-  response.send(request.body);
+response.render('pages/index');
 })
 
 app.listen(app.get('port'), function() {
