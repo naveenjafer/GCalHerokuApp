@@ -13,6 +13,11 @@ app.get('/page1', function(request, response) {
   response.render('pages/index');
 });
 
+app.post('/page2',function(request, response) {
+  console.log(request.body);
+  response.send(request.body);
+})
+
 app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
