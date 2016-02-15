@@ -18,7 +18,7 @@ app.get('/page1', function(request, response) {
 });
 
 app.post('/page2',function(request, response) {
-  response.send(request.body);
+  //response.send(request.body);
 response.render('pages/index');
 })
 
