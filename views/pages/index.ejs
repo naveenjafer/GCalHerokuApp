@@ -17,7 +17,7 @@
        * Check if current user has authorized this application.
        */
       function checkAuth() {
-        console.log("checkedauth");
+
         gapi.auth.authorize(
           {
             'client_id': '111623523826-5vqv92u5n53kugoliiog4jnjui0ish25.apps.googleusercontent.com' ,
@@ -50,13 +50,12 @@
        * @param {Event} event Button click event.
        */
       function handleAuthClick() {
-        console.log("came here");
 
 
 
-  console.log("HANDLE AUTH CALLED");
-  console.log(result.address);
-      //  console.log("visited1");
+
+
+
         gapi.auth.authorize(
           {client_id: CLIENT_ID, scope: SCOPES, immediate: false},
           handleAuthResult);
@@ -107,11 +106,7 @@
         });
 
         */
-        console.log(result.title);
-        console.log(result.address);
-        console.log(result.descp);
-        console.log(result.start);
-        console.log(result.end);
+
         var event = {
   'summary': result.title,
   'location': result.address,
@@ -160,7 +155,7 @@ request.execute(function(event) {
         var pre = document.getElementById('output');
       //  var textContent = document.createTextNode(message + '\n');
         //pre.appendChild(textContent);
-        console.log(message);
+      
 
         var a = document.createElement('a');
 var linkText = document.createTextNode("Event Created Successfully!Click Here to Edit Your Event");
