@@ -119,13 +119,6 @@
     'dateTime': result.end,
     'timeZone': 'GMT +00:00'
   },
-  'recurrence': [
-    'RRULE:FREQ=DAILY;COUNT=2'
-  ],
-  'attendees': [
-    {'email': 'lpage@example.com'},
-    {'email': 'sbrin@example.com'}
-  ],
   'reminders': {
     'useDefault': false,
     'overrides': [
@@ -155,7 +148,7 @@ request.execute(function(event) {
         var pre = document.getElementById('output');
       //  var textContent = document.createTextNode(message + '\n');
         //pre.appendChild(textContent);
-      
+
 
         var a = document.createElement('a');
 var linkText = document.createTextNode("Event Created Successfully!Click Here to Edit Your Event");
